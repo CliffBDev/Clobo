@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "PyBpFPpoPM9eEdtaQq2r0r3Bu8KmGaSsY08JaIQQ43npSXAomkGzkBLFsGn5cso7FKBCTMoG2mbV1SB9reBLww==",
+  "dgSpecHash": "3181qPBZIFxrkPgZDbHPp84Ib8i1E175+KH4aV8N/szgW75JGtWVKOvenpP+wOoAhRdIY/83kbfNbuj1Rg4pYA==",
   "success": true,
   "projectFilePath": "/Users/cliffordbateman/Projects/Clobo/Clobo.Infrastructure/Clobo.Infrastructure.csproj",
   "expectedPackageFiles": [
     "/Users/cliffordbateman/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
+    "/Users/cliffordbateman/.nuget/packages/mediatr/11.0.0/mediatr.11.0.0.nupkg.sha512",
+    "/Users/cliffordbateman/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512",
+    "/Users/cliffordbateman/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/11.0.0/mediatr.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "/Users/cliffordbateman/.nuget/packages/microsoft.entityframeworkcore/6.0.10/microsoft.entityframeworkcore.6.0.10.nupkg.sha512",
     "/Users/cliffordbateman/.nuget/packages/microsoft.entityframeworkcore.abstractions/6.0.10/microsoft.entityframeworkcore.abstractions.6.0.10.nupkg.sha512",
     "/Users/cliffordbateman/.nuget/packages/microsoft.entityframeworkcore.analyzers/6.0.10/microsoft.entityframeworkcore.analyzers.6.0.10.nupkg.sha512",

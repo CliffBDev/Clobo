@@ -488,6 +488,47 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
+      },
+      "Clobo.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Clobo.Domain": "1.0.0",
+          "MediatR": "11.0.0",
+          "MediatR.Extensions.Microsoft.DependencyInjection": "11.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.10"
+        },
+        "compile": {
+          "bin/placeholder/Clobo.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Clobo.Application.dll": {}
+        }
+      },
+      "Clobo.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Clobo.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Clobo.Domain.dll": {}
+        }
+      },
+      "Clobo.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Clobo.Application": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.10",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "6.0.7"
+        },
+        "compile": {
+          "bin/placeholder/Clobo.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Clobo.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -1109,10 +1150,26 @@
         "system.runtime.compilerservices.unsafe.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Clobo.Application/1.0.0": {
+      "type": "project",
+      "path": "../Clobo.Application/Clobo.Application.csproj",
+      "msbuildProject": "../Clobo.Application/Clobo.Application.csproj"
+    },
+    "Clobo.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Clobo.Domain/Clobo.Domain.csproj",
+      "msbuildProject": "../Clobo.Domain/Clobo.Domain.csproj"
+    },
+    "Clobo.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Clobo.Infrastructure/Clobo.Infrastructure.csproj",
+      "msbuildProject": "../Clobo.Infrastructure/Clobo.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Clobo.Infrastructure >= 1.0.0",
       "MediatR >= 11.0.0",
       "MediatR.Extensions.Microsoft.DependencyInjection >= 11.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.10",
@@ -1146,7 +1203,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/cliffordbateman/Projects/Clobo/Clobo.Infrastructure/Clobo.Infrastructure.csproj": {
+              "projectPath": "/Users/cliffordbateman/Projects/Clobo/Clobo.Infrastructure/Clobo.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

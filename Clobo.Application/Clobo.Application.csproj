@@ -16,4 +16,8 @@
       </PackageReference>
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Clobo.Domain\Clobo.Domain.csproj" />
+    </ItemGroup>
+
 </Project>
