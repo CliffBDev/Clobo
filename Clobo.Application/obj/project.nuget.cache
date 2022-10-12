@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "/Ab/wVpo6weYDTaq2O8gIwtWU8muwI3P+lhieUuwtVmU4IcexygSuIuZ7DdDhMqHvoxIhVojOt6Sb9grG4P3dA==",
+  "dgSpecHash": "kxT7u/xRXv5gZqK/NmiyDSjCTcqvecgrDVwJJft/L5eNqaM4JdB6qaqMpvNsuDZFomjtbuf3S2DrfwsGZm4D5Q==",
   "success": true,
   "projectFilePath": "/Users/cliffordbateman/Projects/Clobo/Clobo.Application/Clobo.Application.csproj",
   "expectedPackageFiles": [
+    "/Users/cliffordbateman/.nuget/packages/fluentvalidation/11.2.2/fluentvalidation.11.2.2.nupkg.sha512",
+    "/Users/cliffordbateman/.nuget/packages/fluentvalidation.aspnetcore/11.2.2/fluentvalidation.aspnetcore.11.2.2.nupkg.sha512",
+    "/Users/cliffordbateman/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.2.2/fluentvalidation.dependencyinjectionextensions.11.2.2.nupkg.sha512",
     "/Users/cliffordbateman/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/cliffordbateman/.nuget/packages/mediatr/11.0.0/mediatr.11.0.0.nupkg.sha512",
     "/Users/cliffordbateman/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512",
