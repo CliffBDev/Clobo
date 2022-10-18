@@ -8,7 +8,7 @@ public class CloboContext : DbContext, IApplicationDbContext
 {
     public CloboContext(DbContextOptions<CloboContext> options) : base(options)
     {
-        
+           
     }
     public DbSet<Agent> Agents { get; set; }
     public DbSet<Customer> Customers { get; set; }
