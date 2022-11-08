@@ -1,0 +1,2 @@
+dotnet ef migrations add init --project Clobo.Infrastructure --startup-project Clobo
+dotnet ef database update --project Clobo.Infrastructure --startup-project Clobo

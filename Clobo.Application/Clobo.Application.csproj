@@ -23,4 +23,16 @@
       <ProjectReference Include="..\Clobo.Domain\Clobo.Domain.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Compile Remove="Requests\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Requests\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Requests\**" />
+    </ItemGroup>
+
 </Project>

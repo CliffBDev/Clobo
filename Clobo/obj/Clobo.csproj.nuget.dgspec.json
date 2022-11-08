@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/cliffordbateman/Projects/Clobo/Clobo/Clobo.csproj": {}
+    "/Users/cliffordbateman/Projects/CloboServerNET/Clobo/Clobo.csproj": {}
   },
   "projects": {
-    "/Users/cliffordbateman/Projects/Clobo/Clobo.Application/Clobo.Application.csproj": {
+    "/Users/cliffordbateman/Projects/CloboServerNET/Clobo.Application/Clobo.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/cliffordbateman/Projects/Clobo/Clobo.Application/Clobo.Application.csproj",
+        "projectUniqueName": "/Users/cliffordbateman/Projects/CloboServerNET/Clobo.Application/Clobo.Application.csproj",
         "projectName": "Clobo.Application",
-        "projectPath": "/Users/cliffordbateman/Projects/Clobo/Clobo.Application/Clobo.Application.csproj",
+        "projectPath": "/Users/cliffordbateman/Projects/CloboServerNET/Clobo.Application/Clobo.Application.csproj",
         "packagesPath": "/Users/cliffordbateman/.nuget/packages/",
-        "outputPath": "/Users/cliffordbateman/Projects/Clobo/Clobo.Application/obj/",
+        "outputPath": "/Users/cliffordbateman/Projects/CloboServerNET/Clobo.Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/cliffordbateman/.nuget/NuGet/NuGet.Config"
@@ -27,8 +27,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/cliffordbateman/Projects/Clobo/Clobo.Domain/Clobo.Domain.csproj": {
-                "projectPath": "/Users/cliffordbateman/Projects/Clobo/Clobo.Domain/Clobo.Domain.csproj"
+              "/Users/cliffordbateman/Projects/CloboServerNET/Clobo.Domain/Clobo.Domain.csproj": {
+                "projectPath": "/Users/cliffordbateman/Projects/CloboServerNET/Clobo.Domain/Clobo.Domain.csproj"
               }
             }
           }
@@ -94,14 +94,14 @@
         }
       }
     },
-    "/Users/cliffordbateman/Projects/Clobo/Clobo.Domain/Clobo.Domain.csproj": {
+    "/Users/cliffordbateman/Projects/CloboServerNET/Clobo.Domain/Clobo.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/cliffordbateman/Projects/Clobo/Clobo.Domain/Clobo.Domain.csproj",
+        "projectUniqueName": "/Users/cliffordbateman/Projects/CloboServerNET/Clobo.Domain/Clobo.Domain.csproj",
         "projectName": "Clobo.Domain",
-        "projectPath": "/Users/cliffordbateman/Projects/Clobo/Clobo.Domain/Clobo.Domain.csproj",
+        "projectPath": "/Users/cliffordbateman/Projects/CloboServerNET/Clobo.Domain/Clobo.Domain.csproj",
         "packagesPath": "/Users/cliffordbateman/.nuget/packages/",
-        "outputPath": "/Users/cliffordbateman/Projects/Clobo/Clobo.Domain/obj/",
+        "outputPath": "/Users/cliffordbateman/Projects/CloboServerNET/Clobo.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/cliffordbateman/.nuget/NuGet/NuGet.Config"
@@ -148,14 +148,14 @@
         }
       }
     },
-    "/Users/cliffordbateman/Projects/Clobo/Clobo.Infrastructure/Clobo.Infrastructure.csproj": {
+    "/Users/cliffordbateman/Projects/CloboServerNET/Clobo.Infrastructure/Clobo.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/cliffordbateman/Projects/Clobo/Clobo.Infrastructure/Clobo.Infrastructure.csproj",
+        "projectUniqueName": "/Users/cliffordbateman/Projects/CloboServerNET/Clobo.Infrastructure/Clobo.Infrastructure.csproj",
         "projectName": "Clobo.Infrastructure",
-        "projectPath": "/Users/cliffordbateman/Projects/Clobo/Clobo.Infrastructure/Clobo.Infrastructure.csproj",
+        "projectPath": "/Users/cliffordbateman/Projects/CloboServerNET/Clobo.Infrastructure/Clobo.Infrastructure.csproj",
         "packagesPath": "/Users/cliffordbateman/.nuget/packages/",
-        "outputPath": "/Users/cliffordbateman/Projects/Clobo/Clobo.Infrastructure/obj/",
+        "outputPath": "/Users/cliffordbateman/Projects/CloboServerNET/Clobo.Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/cliffordbateman/.nuget/NuGet/NuGet.Config"
@@ -171,8 +171,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/cliffordbateman/Projects/Clobo/Clobo.Application/Clobo.Application.csproj": {
-                "projectPath": "/Users/cliffordbateman/Projects/Clobo/Clobo.Application/Clobo.Application.csproj"
+              "/Users/cliffordbateman/Projects/CloboServerNET/Clobo.Application/Clobo.Application.csproj": {
+                "projectPath": "/Users/cliffordbateman/Projects/CloboServerNET/Clobo.Application/Clobo.Application.csproj"
               }
             }
           }
@@ -222,14 +222,14 @@
         }
       }
     },
-    "/Users/cliffordbateman/Projects/Clobo/Clobo/Clobo.csproj": {
+    "/Users/cliffordbateman/Projects/CloboServerNET/Clobo/Clobo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/cliffordbateman/Projects/Clobo/Clobo/Clobo.csproj",
+        "projectUniqueName": "/Users/cliffordbateman/Projects/CloboServerNET/Clobo/Clobo.csproj",
         "projectName": "Clobo",
-        "projectPath": "/Users/cliffordbateman/Projects/Clobo/Clobo/Clobo.csproj",
+        "projectPath": "/Users/cliffordbateman/Projects/CloboServerNET/Clobo/Clobo.csproj",
         "packagesPath": "/Users/cliffordbateman/.nuget/packages/",
-        "outputPath": "/Users/cliffordbateman/Projects/Clobo/Clobo/obj/",
+        "outputPath": "/Users/cliffordbateman/Projects/CloboServerNET/Clobo/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/cliffordbateman/.nuget/NuGet/NuGet.Config"
@@ -245,8 +245,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/cliffordbateman/Projects/Clobo/Clobo.Infrastructure/Clobo.Infrastructure.csproj": {
-                "projectPath": "/Users/cliffordbateman/Projects/Clobo/Clobo.Infrastructure/Clobo.Infrastructure.csproj"
+              "/Users/cliffordbateman/Projects/CloboServerNET/Clobo.Infrastructure/Clobo.Infrastructure.csproj": {
+                "projectPath": "/Users/cliffordbateman/Projects/CloboServerNET/Clobo.Infrastructure/Clobo.Infrastructure.csproj"
               }
             }
           }

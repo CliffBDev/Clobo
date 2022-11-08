@@ -24,6 +24,8 @@ if (app.Environment.IsDevelopment())
 
 //Add migration and initializer in infrastructure initializer and do it here
 
+app.UseAuthentication();
+
 app.UseHttpsRedirection();
 
 app.UseAuthorization();

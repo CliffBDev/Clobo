@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "g7SBIMf0aQ2sOlU3NiJ7eox4oZCbIBrDLW3ls3TuSt/993k/A1CWblNQddA9M97qXBRlJA1TvV0a5MYQzLGFzQ==",
+  "dgSpecHash": "LFW2GRNiaZZhjSEuLwAW/ZT5sPIjwbAutwj0oYaZhsT7fzdp7z9Uu7Rdi7U6l7eviTVxERpDJBPi1lz8XY4fmQ==",
   "success": true,
-  "projectFilePath": "/Users/cliffordbateman/Projects/Clobo/Clobo.Domain/Clobo.Domain.csproj",
+  "projectFilePath": "/Users/cliffordbateman/Projects/CloboServerNET/Clobo.Domain/Clobo.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
