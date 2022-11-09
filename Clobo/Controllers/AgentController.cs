@@ -17,19 +17,19 @@ namespace Clobo.Controllers
             throw new NotImplementedException();
         }
 
-        [HttpGet]
+        [HttpPost]
         public IActionResult Add()
         {
             throw new NotImplementedException();
         }
 
-        [HttpGet]
+        [HttpPut]
         public IActionResult Update()
         {
             throw new NotImplementedException();
         }
 
-        [HttpGet]
+        [HttpDelete]
         public IActionResult Delete()
         {
             throw new NotImplementedException();

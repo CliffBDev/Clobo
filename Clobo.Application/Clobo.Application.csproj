@@ -41,7 +41,6 @@
       <None Remove="Agent\Commands\DeleteAgent\" />
       <None Remove="Agent\Commands\UpdateAgent\" />
       <None Remove="Agent\Commands\AddAgent\" />
-      <None Remove="Agent\Requests\GetAgent\" />
     </ItemGroup>
 
     <ItemGroup>
@@ -53,6 +52,5 @@
       <Folder Include="Agent\Commands\DeleteAgent\" />
       <Folder Include="Agent\Commands\UpdateAgent\" />
       <Folder Include="Agent\Commands\AddAgent\" />
-      <Folder Include="Agent\Requests\GetAgent\" />
     </ItemGroup>
 </Project>
