@@ -1,3 +1,5 @@
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -23,6 +25,8 @@ if (app.Environment.IsDevelopment())
 }
 
 //Add migration and initializer in infrastructure initializer and do it here
+
+
 
 app.UseAuthentication();
 

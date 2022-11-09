@@ -3,6 +3,7 @@ using System;
 using Clobo.Infrastructure.Persistance;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,10 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Clobo.Infrastructure.Migrations
 {
     [DbContext(typeof(CloboContext))]
-    partial class CloboContextModelSnapshot : ModelSnapshot
+    [Migration("20221109010023_debug_trackable_entity")]
+    partial class debug_trackable_entity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

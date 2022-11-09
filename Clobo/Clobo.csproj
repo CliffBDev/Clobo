@@ -17,6 +17,9 @@
         <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.10" />
         <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.7" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+        <PackageReference Include="FluentValidation" Version="11.2.2" />
+        <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.2.2" />
+        <PackageReference Include="FluentValidation.AspNetCore" Version="11.2.2" />
     </ItemGroup>
 
     <ItemGroup>
@@ -27,4 +30,9 @@
       <Compile Remove="Controllers\WeatherForecastController.cs" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Remove="FluentValidation" />
+      <None Remove="FluentValidation.DependencyInjectionExtensions" />
+      <None Remove="FluentValidation.AspNetCore" />
+    </ItemGroup>
 </Project>

@@ -2,7 +2,7 @@ using Clobo.Application.Common.Interfaces;
 using Clobo.Domain.Entities;
 using MediatR;
 
-namespace Microsoft.Extensions.DependencyInjection.Teams.Commands;
+namespace Microsoft.Extensions.DependencyInjection.Teams.AddTeam.Commands;
 
 public record AddTeamCommand : IRequest<Team>
 {

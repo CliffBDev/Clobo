@@ -33,6 +33,12 @@
 
     <ItemGroup>
       <None Remove="Requests\**" />
+      <None Remove="Teams\Commands\AddTeam\" />
+      <None Remove="Teams\Commands\UpdateTeam\" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Teams\Commands\AddTeam\" />
+      <Folder Include="Teams\Commands\UpdateTeam\" />
+    </ItemGroup>
 </Project>

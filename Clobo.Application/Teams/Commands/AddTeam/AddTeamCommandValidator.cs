@@ -2,7 +2,7 @@ using FluentValidation;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 
-namespace Microsoft.Extensions.DependencyInjection.Teams.Commands;
+namespace Microsoft.Extensions.DependencyInjection.Teams.AddTeam.Commands;
 
 public class AddTeamCommandHandlerValidtor : AbstractValidator<AddTeamCommand>
 {
