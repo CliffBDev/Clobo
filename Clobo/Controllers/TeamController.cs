@@ -16,7 +16,7 @@ namespace Clobo.Controllers
 {
     public class TeamController : ApiControllerBase
     {
-       
+
         [HttpGet]
         public async Task<IActionResult> GetTeams()
         {

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YBPu7VKPEm61reSDJOvmEGPK7yztYDvwzvhYlSMWcwZOgPlfK6GWktruBu8jUrXl9upUHjd8d4LGkWonEfv74A==",
+  "dgSpecHash": "AyUdMi8qNzcizFVv+YQYAKcm+gs4hiV6MosNMSfX4H2YaHT9jqGlaupSqbKrnXJmcijTh7E0IWFPfQPrWjGH7g==",
   "success": true,
-  "projectFilePath": "/Users/cliffordbateman/Projects/CloboServerNET/Clobo.Application/Clobo.Application.csproj",
+  "projectFilePath": "/Users/cliffordbateman/Projects/Clobo/Clobo.Application/Clobo.Application.csproj",
   "expectedPackageFiles": [
     "/Users/cliffordbateman/.nuget/packages/fluentvalidation/11.2.2/fluentvalidation.11.2.2.nupkg.sha512",
     "/Users/cliffordbateman/.nuget/packages/fluentvalidation.aspnetcore/11.2.2/fluentvalidation.aspnetcore.11.2.2.nupkg.sha512",

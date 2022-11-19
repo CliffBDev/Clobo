@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/cliffordbateman/Projects/CloboServerNET/Clobo.Domain/Clobo.Domain.csproj",
+      "projectUniqueName": "/Users/cliffordbateman/Projects/Clobo/Clobo.Domain/Clobo.Domain.csproj",
       "projectName": "Clobo.Domain",
-      "projectPath": "/Users/cliffordbateman/Projects/CloboServerNET/Clobo.Domain/Clobo.Domain.csproj",
+      "projectPath": "/Users/cliffordbateman/Projects/Clobo/Clobo.Domain/Clobo.Domain.csproj",
       "packagesPath": "/Users/cliffordbateman/.nuget/packages/",
-      "outputPath": "/Users/cliffordbateman/Projects/CloboServerNET/Clobo.Domain/obj/",
+      "outputPath": "/Users/cliffordbateman/Projects/Clobo/Clobo.Domain/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/cliffordbateman/.nuget/NuGet/NuGet.Config"
