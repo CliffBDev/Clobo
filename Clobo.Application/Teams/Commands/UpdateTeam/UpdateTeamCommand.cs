@@ -6,11 +6,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Clobo.Application.Teams.Commands.UpdateTeam
 {
-	public record UpdateTeamCommand : IRequest<Team>
-	{
+    public record UpdateTeamCommand : IRequest<Team>
+    {
         public int Id { get; set; }
-		public string Name { get; init; }
-	}
+        public string Name { get; init; }
+    }
 
     public class UpdateTeamCommandHandler : IRequestHandler<UpdateTeamCommand, Team>
     {
@@ -25,7 +25,7 @@ namespace Clobo.Application.Teams.Commands.UpdateTeam
             var dbTeam = await _context.Teams.FirstOrDefaultAsync(x => x.Id == request.Id);
 
             if (dbTeam == null)
-                throw new ArgumentException("Team with an Id of 1 could not be found");
+                throw new ArgumentException($"Team with an Id of {request.Id} could not be found");
 
             dbTeam.Name = request.Name;
 

@@ -36,11 +36,19 @@
       <None Remove="Teams\Commands\AddTeam\" />
       <None Remove="Teams\Commands\UpdateTeam\" />
       <None Remove="Common\Behaviors\" />
+      <None Remove="Agents\Commands\UpdateAgent\" />
+      <None Remove="Agents\Requests\" />
+      <None Remove="Agents\Requests\GetAllAgents\" />
+      <None Remove="Agents\Commands\DeleteAgent\" />
     </ItemGroup>
 
     <ItemGroup>
       <Folder Include="Teams\Commands\AddTeam\" />
       <Folder Include="Teams\Commands\UpdateTeam\" />
       <Folder Include="Common\Behaviors\" />
+      <Folder Include="Agents\Commands\UpdateAgent\" />
+      <Folder Include="Agents\Requests\" />
+      <Folder Include="Agents\Requests\GetAllAgents\" />
+      <Folder Include="Agents\Commands\DeleteAgent\" />
     </ItemGroup>
 </Project>

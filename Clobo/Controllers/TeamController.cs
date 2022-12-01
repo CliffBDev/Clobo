@@ -18,6 +18,7 @@ namespace Clobo.Controllers
     {
 
         [HttpGet]
+        [ProducesResponseType(typeof(IList<Team>), StatusCodes.Status200OK)]
         public async Task<IActionResult> GetTeams()
         {
             var teams = await Mediator.Send(new GetAllTeamsRequest());
@@ -25,6 +26,7 @@ namespace Clobo.Controllers
         }
 
         [HttpPost]
+        [ProducesResponseType(typeof(Team), StatusCodes.Status200OK)]
         public async Task<IActionResult> AddTeam([FromBody] AddTeamCommand command)
         {
             var resp = await Mediator.Send(command);
@@ -32,6 +34,7 @@ namespace Clobo.Controllers
         }
 
         [HttpPut]
+        [ProducesResponseType(typeof(Team), StatusCodes.Status200OK)]
         public async Task<IActionResult> UpdateTeam([FromBody] UpdateTeamCommand command)
         {
             var resp = await Mediator.Send(command);
@@ -39,6 +42,7 @@ namespace Clobo.Controllers
         }
 
         [HttpDelete]
+        [ProducesResponseType(typeof(int), StatusCodes.Status200OK)]
         public async Task<IActionResult> DeleteTeam([FromBody] DeleteTeamCommand command)
         {
             var resp = await Mediator.Send(command);
