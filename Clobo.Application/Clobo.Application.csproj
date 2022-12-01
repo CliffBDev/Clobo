@@ -40,6 +40,7 @@
       <None Remove="Agents\Requests\" />
       <None Remove="Agents\Requests\GetAllAgents\" />
       <None Remove="Agents\Commands\DeleteAgent\" />
+      <None Remove="Teams\Requests\GetAllTeams\" />
     </ItemGroup>
 
     <ItemGroup>
@@ -50,5 +51,6 @@
       <Folder Include="Agents\Requests\" />
       <Folder Include="Agents\Requests\GetAllAgents\" />
       <Folder Include="Agents\Commands\DeleteAgent\" />
+      <Folder Include="Teams\Requests\GetAllTeams\" />
     </ItemGroup>
 </Project>

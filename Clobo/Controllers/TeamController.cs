@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Clobo.Application.Common.Interfaces;
 using Clobo.Application.Teams.Commands.DeleteTeam;
 using Clobo.Application.Teams.Commands.UpdateTeam;
-using Clobo.Application.Teams.Requests;
+using Clobo.Application.Teams.GetAllTeams.Requests;
 using Clobo.Domain.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;

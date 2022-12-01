@@ -3,7 +3,7 @@ using Clobo.Domain.Entities;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 
-namespace Clobo.Application.Teams.Requests;
+namespace Clobo.Application.Teams.GetAllTeams.Requests;
 
 public record GetAllTeamsRequest : IRequest<IList<Team>>;
 
