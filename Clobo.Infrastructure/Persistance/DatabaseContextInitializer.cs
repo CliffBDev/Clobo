@@ -10,7 +10,7 @@ public class DatabaseContextInitializer
         _context = context;
     }
 
-    public async Task Migrate()
+    public async Task MigrateAsync()
     {
         await _context.Database.MigrateAsync();
     }

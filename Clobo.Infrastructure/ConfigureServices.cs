@@ -18,6 +18,7 @@ public static class ConfigureServices
             options.UseSqlite("FileName=Clobo.db"
                 , x => x.MigrationsAssembly("Clobo.Infrastructure")));
         services.AddScoped<IApplicationDbContext>(provider => provider.GetRequiredService<CloboContext>());
+        services.AddScoped<DatabaseContextInitializer>();
 
         return services;
     }

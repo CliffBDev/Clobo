@@ -1,3 +1,4 @@
+using Clobo.Infrastructure.Persistance;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -22,6 +23,11 @@ builder.Host.UseSerilog((hostContext, services, configuration) =>
 
 var app = builder.Build();
 
+using (var scope = app.Services.CreateScope())
+{
+    var initialiser = scope.ServiceProvider.GetRequiredService<DatabaseContextInitializer>();
+    await initialiser.MigrateAsync();
+}
 
 // Configure the HTTP request pipeline.
 
