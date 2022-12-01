@@ -21,28 +21,28 @@ namespace Clobo.Controllers
         public async Task<IActionResult> GetTeams()
         {
             var teams = await Mediator.Send(new GetAllTeamsRequest());
-            return new OkObjectResult(teams);
+            return Ok(teams);
         }
 
         [HttpPost]
         public async Task<IActionResult> AddTeam([FromBody] AddTeamCommand command)
         {
             var resp = await Mediator.Send(command);
-            return new OkObjectResult(resp);
+            return Ok(resp);
         }
 
         [HttpPut]
         public async Task<IActionResult> UpdateTeam([FromBody] UpdateTeamCommand command)
         {
             var resp = await Mediator.Send(command);
-            return new OkObjectResult(resp);
+            return Ok(resp);
         }
 
         [HttpDelete]
         public async Task<IActionResult> DeleteTeam([FromBody] DeleteTeamCommand command)
         {
             var resp = await Mediator.Send(command);
-            return new OkObjectResult(resp);
+            return Ok(resp);
         }
     }
 }

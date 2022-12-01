@@ -1,4 +1,5 @@
 using System.Reflection;
+using Clobo.Application.Common.Behaviors;
 using FluentValidation;
 using FluentValidation.AspNetCore;
 using MediatR;
@@ -12,6 +13,7 @@ public static class ConfigureServices
         services.AddFluentValidationAutoValidation();
         services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
         services.AddMediatR(Assembly.GetExecutingAssembly());
+        services.AddTransient(typeof(IPipelineBehavior<,>), typeof(UnhandledExceptionBehavior<,>));
         return services;
     }
 }

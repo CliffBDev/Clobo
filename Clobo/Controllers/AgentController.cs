@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Clobo.Application.Agents.Commands.AddAgent;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -18,9 +19,10 @@ namespace Clobo.Controllers
         }
 
         [HttpPost]
-        public IActionResult Add()
+        public async Task<IActionResult> Add([FromBody] AddAgentCommand command)
         {
-            throw new NotImplementedException();
+            var agent = await Mediator.Send(command);
+            return Ok(agent);
         }
 
         [HttpPut]

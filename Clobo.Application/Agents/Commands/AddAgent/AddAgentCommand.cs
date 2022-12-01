@@ -5,12 +5,12 @@ using Clobo.Application.Common.Interfaces;
 
 namespace Clobo.Application.Agents.Commands.AddAgent
 {
-	public record AddAgentCommand : IRequest<Agent>
-	{
-		public string FirstName { get; set; }
-		public string LastName { get; set; }
-		public string Email { get; set; }
-	}
+    public record AddAgentCommand : IRequest<Agent>
+    {
+        public string FirstName { get; init; }
+        public string LastName { get; init; }
+        public string Email { get; init; }
+    }
 
     public class AddAgentCommandHandler : IRequestHandler<AddAgentCommand, Agent>
     {

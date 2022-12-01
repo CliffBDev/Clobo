@@ -1,4 +1,4 @@
-
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,13 +9,19 @@ builder.Services.AddApplicationServices();
 //Configure services from Infrastructure
 builder.Services.AddInfrastructureServices(builder.Configuration);
 
-
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Host.UseSerilog((hostContext, services, configuration) =>
+{
+    configuration.WriteTo.Console();
+    configuration.WriteTo.File($"{AppDomain.CurrentDomain.BaseDirectory}logs/log-.txt", rollingInterval: RollingInterval.Hour);
+});
+
 var app = builder.Build();
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
