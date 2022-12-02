@@ -16,6 +16,6 @@ public class GetAllTeamsRequestHandler : IRequestHandler<GetAllTeamsRequest, ILi
     }
     public async Task<IList<Team>> Handle(GetAllTeamsRequest request, CancellationToken cancellationToken)
     {
-        return await _context.Teams.ToListAsync(cancellationToken);
+        return await _context.Teams.Include(x => x.TeamAgents).ThenInclude(x => x.Agent).ToListAsync(cancellationToken);
     }
 }

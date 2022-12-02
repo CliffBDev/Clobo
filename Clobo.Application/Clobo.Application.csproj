@@ -41,6 +41,10 @@
       <None Remove="Agents\Requests\GetAllAgents\" />
       <None Remove="Agents\Commands\DeleteAgent\" />
       <None Remove="Teams\Requests\GetAllTeams\" />
+      <None Remove="TeamAgent\Commands\" />
+      <None Remove="TeamAgent\Commands\AddAgentToTeam\" />
+      <None Remove="TeamAgents\Commands\RemoveAgentFromTeam\" />
+      <None Remove="TeamAgents\Commands\AgentTeamLead\" />
     </ItemGroup>
 
     <ItemGroup>
@@ -52,5 +56,9 @@
       <Folder Include="Agents\Requests\GetAllAgents\" />
       <Folder Include="Agents\Commands\DeleteAgent\" />
       <Folder Include="Teams\Requests\GetAllTeams\" />
+      <Folder Include="TeamAgents\Commands\" />
+      <Folder Include="TeamAgents\Commands\AddAgentToTeam\" />
+      <Folder Include="TeamAgents\Commands\RemoveAgentFromTeam\" />
+      <Folder Include="TeamAgents\Commands\AgentTeamLead\" />
     </ItemGroup>
 </Project>
