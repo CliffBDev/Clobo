@@ -8,7 +8,7 @@ namespace Clobo.Application.Teams.Commands.UpdateTeam
 {
     public record UpdateTeamCommand : IRequest<Team>
     {
-        public int Id { get; set; }
+        public int Id { get; init; }
         public string Name { get; init; }
     }
 

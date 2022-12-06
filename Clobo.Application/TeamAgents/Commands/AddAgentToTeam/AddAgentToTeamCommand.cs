@@ -25,7 +25,7 @@ namespace Clobo.Application.TeamAgents.Commands.AddAgentToTeam
         {
             var teamAgentExists = await _context.TeamAgents.Include(x => x.Team).Include(x => x.Agent).FirstOrDefaultAsync(x => x.Agent.Id == request.AgentId && x.Team.Id == request.TeamId);
 
-            if (teamAgentExists == null)
+            if (teamAgentExists != null)
                 throw new ArgumentException("Agent already belongs to this team");
 
             var team = await _context.Teams.FirstOrDefaultAsync(x => x.Id == request.TeamId);
