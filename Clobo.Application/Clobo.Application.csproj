@@ -42,6 +42,17 @@
       <None Remove="Business\Teams\" />
       <None Remove="Business\TeamAgents\Requests\" />
       <None Remove="Business\TeamAgents\Requests\GetAllTeamAgents\" />
+      <None Remove="Business\Products\" />
+      <None Remove="Business\Products\Commands\" />
+      <None Remove="Business\Products\Requests\" />
+      <None Remove="Business\Products\Commands\AddProduct\" />
+      <None Remove="Business\Products\Commands\AddProduct\AddSingleProduct\" />
+      <None Remove="Business\Products\Commands\AddProduct\AddMultipleProducts\" />
+      <None Remove="Business\Products\Commands\UpdateProduct\" />
+      <None Remove="Business\Products\Commands\DeleteProduct\" />
+      <None Remove="Business\Products\Requests\GetAllProducts\" />
+      <None Remove="Business\Products\Commands\UpdateProduct\UpdateSingleProduct\" />
+      <None Remove="Business\Products\Commands\UpdateProduct\UpdateMultipleProducts\" />
     </ItemGroup>
 
     <ItemGroup>
@@ -52,5 +63,16 @@
       <Folder Include="Business\Teams\" />
       <Folder Include="Business\TeamAgents\Requests\" />
       <Folder Include="Business\TeamAgents\Requests\GetAllTeamAgents\" />
+      <Folder Include="Business\Products\" />
+      <Folder Include="Business\Products\Commands\" />
+      <Folder Include="Business\Products\Requests\" />
+      <Folder Include="Business\Products\Commands\AddProduct\" />
+      <Folder Include="Business\Products\Commands\AddProduct\AddSingleProduct\" />
+      <Folder Include="Business\Products\Commands\AddProduct\AddMultipleProducts\" />
+      <Folder Include="Business\Products\Commands\UpdateProduct\" />
+      <Folder Include="Business\Products\Commands\DeleteProduct\" />
+      <Folder Include="Business\Products\Requests\GetAllProducts\" />
+      <Folder Include="Business\Products\Commands\UpdateProduct\UpdateSingleProduct\" />
+      <Folder Include="Business\Products\Commands\UpdateProduct\UpdateMultipleProducts\" />
     </ItemGroup>
 </Project>
