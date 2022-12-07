@@ -40,6 +40,8 @@
       <None Remove="Business\Agents\" />
       <None Remove="Business\TeamAgents\" />
       <None Remove="Business\Teams\" />
+      <None Remove="Business\TeamAgents\Requests\" />
+      <None Remove="Business\TeamAgents\Requests\GetAllTeamAgents\" />
     </ItemGroup>
 
     <ItemGroup>
@@ -48,5 +50,7 @@
       <Folder Include="Business\Agents\" />
       <Folder Include="Business\TeamAgents\" />
       <Folder Include="Business\Teams\" />
+      <Folder Include="Business\TeamAgents\Requests\" />
+      <Folder Include="Business\TeamAgents\Requests\GetAllTeamAgents\" />
     </ItemGroup>
 </Project>
