@@ -33,32 +33,20 @@
 
     <ItemGroup>
       <None Remove="Requests\**" />
-      <None Remove="Teams\Commands\AddTeam\" />
-      <None Remove="Teams\Commands\UpdateTeam\" />
       <None Remove="Common\Behaviors\" />
-      <None Remove="Agents\Commands\UpdateAgent\" />
-      <None Remove="Agents\Requests\" />
-      <None Remove="Agents\Requests\GetAllAgents\" />
-      <None Remove="Agents\Commands\DeleteAgent\" />
-      <None Remove="Teams\Requests\GetAllTeams\" />
       <None Remove="TeamAgent\Commands\" />
       <None Remove="TeamAgent\Commands\AddAgentToTeam\" />
-      <None Remove="TeamAgents\Commands\RemoveAgentFromTeam\" />
-      <None Remove="TeamAgents\Commands\AgentTeamLead\" />
+      <None Remove="Business\" />
+      <None Remove="Business\Agents\" />
+      <None Remove="Business\TeamAgents\" />
+      <None Remove="Business\Teams\" />
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Teams\Commands\AddTeam\" />
-      <Folder Include="Teams\Commands\UpdateTeam\" />
       <Folder Include="Common\Behaviors\" />
-      <Folder Include="Agents\Commands\UpdateAgent\" />
-      <Folder Include="Agents\Requests\" />
-      <Folder Include="Agents\Requests\GetAllAgents\" />
-      <Folder Include="Agents\Commands\DeleteAgent\" />
-      <Folder Include="Teams\Requests\GetAllTeams\" />
-      <Folder Include="TeamAgents\Commands\" />
-      <Folder Include="TeamAgents\Commands\AddAgentToTeam\" />
-      <Folder Include="TeamAgents\Commands\RemoveAgentFromTeam\" />
-      <Folder Include="TeamAgents\Commands\AgentTeamLead\" />
+      <Folder Include="Business\" />
+      <Folder Include="Business\Agents\" />
+      <Folder Include="Business\TeamAgents\" />
+      <Folder Include="Business\Teams\" />
     </ItemGroup>
 </Project>
