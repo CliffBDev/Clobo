@@ -33,32 +33,46 @@
 
     <ItemGroup>
       <None Remove="Requests\**" />
-      <None Remove="Teams\Commands\AddTeam\" />
-      <None Remove="Teams\Commands\UpdateTeam\" />
       <None Remove="Common\Behaviors\" />
-      <None Remove="Agents\Commands\UpdateAgent\" />
-      <None Remove="Agents\Requests\" />
-      <None Remove="Agents\Requests\GetAllAgents\" />
-      <None Remove="Agents\Commands\DeleteAgent\" />
-      <None Remove="Teams\Requests\GetAllTeams\" />
       <None Remove="TeamAgent\Commands\" />
       <None Remove="TeamAgent\Commands\AddAgentToTeam\" />
-      <None Remove="TeamAgents\Commands\RemoveAgentFromTeam\" />
-      <None Remove="TeamAgents\Commands\AgentTeamLead\" />
+      <None Remove="Business\" />
+      <None Remove="Business\Agents\" />
+      <None Remove="Business\TeamAgents\" />
+      <None Remove="Business\Teams\" />
+      <None Remove="Business\TeamAgents\Requests\" />
+      <None Remove="Business\TeamAgents\Requests\GetAllTeamAgents\" />
+      <None Remove="Business\Products\" />
+      <None Remove="Business\Products\Commands\" />
+      <None Remove="Business\Products\Requests\" />
+      <None Remove="Business\Products\Commands\AddProduct\" />
+      <None Remove="Business\Products\Commands\AddProduct\AddSingleProduct\" />
+      <None Remove="Business\Products\Commands\AddProduct\AddMultipleProducts\" />
+      <None Remove="Business\Products\Commands\UpdateProduct\" />
+      <None Remove="Business\Products\Commands\DeleteProduct\" />
+      <None Remove="Business\Products\Requests\GetAllProducts\" />
+      <None Remove="Business\Products\Commands\UpdateProduct\UpdateSingleProduct\" />
+      <None Remove="Business\Products\Commands\UpdateProduct\UpdateMultipleProducts\" />
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Teams\Commands\AddTeam\" />
-      <Folder Include="Teams\Commands\UpdateTeam\" />
       <Folder Include="Common\Behaviors\" />
-      <Folder Include="Agents\Commands\UpdateAgent\" />
-      <Folder Include="Agents\Requests\" />
-      <Folder Include="Agents\Requests\GetAllAgents\" />
-      <Folder Include="Agents\Commands\DeleteAgent\" />
-      <Folder Include="Teams\Requests\GetAllTeams\" />
-      <Folder Include="TeamAgents\Commands\" />
-      <Folder Include="TeamAgents\Commands\AddAgentToTeam\" />
-      <Folder Include="TeamAgents\Commands\RemoveAgentFromTeam\" />
-      <Folder Include="TeamAgents\Commands\AgentTeamLead\" />
+      <Folder Include="Business\" />
+      <Folder Include="Business\Agents\" />
+      <Folder Include="Business\TeamAgents\" />
+      <Folder Include="Business\Teams\" />
+      <Folder Include="Business\TeamAgents\Requests\" />
+      <Folder Include="Business\TeamAgents\Requests\GetAllTeamAgents\" />
+      <Folder Include="Business\Products\" />
+      <Folder Include="Business\Products\Commands\" />
+      <Folder Include="Business\Products\Requests\" />
+      <Folder Include="Business\Products\Commands\AddProduct\" />
+      <Folder Include="Business\Products\Commands\AddProduct\AddSingleProduct\" />
+      <Folder Include="Business\Products\Commands\AddProduct\AddMultipleProducts\" />
+      <Folder Include="Business\Products\Commands\UpdateProduct\" />
+      <Folder Include="Business\Products\Commands\DeleteProduct\" />
+      <Folder Include="Business\Products\Requests\GetAllProducts\" />
+      <Folder Include="Business\Products\Commands\UpdateProduct\UpdateSingleProduct\" />
+      <Folder Include="Business\Products\Commands\UpdateProduct\UpdateMultipleProducts\" />
     </ItemGroup>
 </Project>

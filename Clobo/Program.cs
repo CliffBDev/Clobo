@@ -37,10 +37,7 @@ using (var scope = app.Services.CreateScope())
 app.UseSwagger();
 app.UseSwaggerUI();
 
-
 //Add migration and initializer in infrastructure initializer and do it here
-
-
 
 app.UseAuthentication();
 

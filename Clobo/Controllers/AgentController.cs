@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Clobo.Application.Agents.Commands.AddAgent;
-using Clobo.Application.Agents.Commands.DeleteAgent;
-using Clobo.Application.Agents.Commands.UpdateAgent;
-using Clobo.Application.Agents.Requests.GetAllAgents;
+using Clobo.Application.Business.Agents.Commands.AddAgent;
+using Clobo.Application.Business.Agents.Commands.DeleteAgent;
+using Clobo.Application.Business.Agents.Commands.UpdateAgent;
+using Clobo.Application.Business.Agents.Requests.GetAllAgents;
 using Clobo.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 
