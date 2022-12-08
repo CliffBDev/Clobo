@@ -26,7 +26,7 @@ namespace Clobo.Application.Business.TeamAgents.Commands.AgentTeamLead
             var teamAgent = await _context.TeamAgents.Include(x => x.Agent).Include(x => x.Team)
                 .FirstOrDefaultAsync(x => x.Team.Id == request.TeamId && x.Agent.Id == request.AgentId);
 
-            if (teamAgent == null)
+            if (teamAgent is null)
                 throw new ArgumentException("Team agent does not exist");
 
             teamAgent.IsLead = !teamAgent.IsLead;

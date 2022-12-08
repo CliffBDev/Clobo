@@ -26,7 +26,7 @@ namespace Clobo.Application.Business.Agents.Commands.UpdateAgent
         {
             var dbAgent = await _context.Agents.FirstOrDefaultAsync(x => x.Id == request.Id);
 
-            if (dbAgent == null)
+            if (dbAgent is null)
                 throw new Exception("Agent does not exist");
 
             dbAgent.FirstName = request.FirstName;

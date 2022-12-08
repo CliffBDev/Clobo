@@ -19,9 +19,26 @@ namespace Clobo.Application.Business.Products.Commands.AddProduct.AddMultiplePro
             _context = context;
         }
 
-        public Task<IList<Product>> Handle(AddMultipleProductsCommand request, CancellationToken cancellationToken)
+        public async Task<IList<Product>> Handle(AddMultipleProductsCommand request, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            List<Product> products = new();
+
+            foreach (var productRequest in request.Products)
+            {
+                products.Add(new Product()
+                {
+                    Name = productRequest.Name,
+                    Description = productRequest.Description,
+                    SerialNumber = productRequest.SerialNumber,
+                    Price = productRequest.Price
+                });
+            }
+
+            _context.Products.AddRange(products);
+
+            await _context.SaveChangesAsync(cancellationToken);
+
+            return products;
         }
     }
 }

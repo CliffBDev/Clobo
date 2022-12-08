@@ -26,17 +26,17 @@ namespace Clobo.Application.Business.TeamAgents.Commands.AddAgentToTeam
             var teamAgentExists = await _context.TeamAgents.Include(x => x.Team).Include(x => x.Agent)
                 .FirstOrDefaultAsync(x => x.Agent.Id == request.AgentId && x.Team.Id == request.TeamId);
 
-            if (teamAgentExists != null)
+            if (teamAgentExists is not null)
                 throw new ArgumentException("Agent already belongs to this team");
 
             var team = await _context.Teams.FirstOrDefaultAsync(x => x.Id == request.TeamId);
 
-            if (team == null)
+            if (team is null)
                 throw new ArgumentException("Team does not exist");
 
             var agent = await _context.Agents.FirstOrDefaultAsync(x => x.Id == request.AgentId);
 
-            if (agent == null)
+            if (agent is null)
                 throw new ArgumentException("Agent does not exist");
 
             var teamAgentToAdd = new TeamAgent()
