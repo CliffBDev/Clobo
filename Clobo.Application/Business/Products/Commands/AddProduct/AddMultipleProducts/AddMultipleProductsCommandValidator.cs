@@ -11,9 +11,12 @@ namespace Clobo.Application.Business.Products.Commands.AddProduct.AddMultiplePro
             RuleFor(x => x.Products)
                 .NotEmpty().WithMessage("Products cannot be empty");
 
-            //This works and is the most reusable way to do things, but I don't like the messages it produces.
+            //This works and is the most reusable way to do things, but I don't like the error messages it produces.
             RuleForEach(x => x.Products)
-                .SetValidator(new AddSingleProductCommandValidator());
+                .SetValidator(new AddSingleProductCommandValidator())
+                .WithMessage($"Please make sure all products are correct");
+
+
         }
     }
 }

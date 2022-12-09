@@ -1,6 +1,7 @@
 ﻿using System;
 using Clobo.Application.Common.Interfaces;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 
 namespace Clobo.Application.Business.Products.Commands.DeleteProduct
 {
@@ -18,9 +19,18 @@ namespace Clobo.Application.Business.Products.Commands.DeleteProduct
             _context = context;
         }
 
-        public Task<bool> Handle(DeleteProductCommand request, CancellationToken cancellationToken)
+        public async Task<bool> Handle(DeleteProductCommand request, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            var product = await _context.Products.FirstOrDefaultAsync(x => x.Id == request.Id);
+
+            if (product is null)
+                throw new ArgumentException("Product does not exist");
+
+            _context.Products.Remove(product);
+
+            await _context.SaveChangesAsync(cancellationToken);
+
+            return true;
         }
     }
 }
