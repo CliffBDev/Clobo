@@ -72,6 +72,9 @@
       <None Remove="Business\CustomerUsers\Commands\" />
       <None Remove="Business\CustomerUsers\Requests\" />
       <None Remove="Business\CustomerUsers\Commands\AddCustomerUser\" />
+      <None Remove="Business\CustomerUsers\Commands\UpdateCustomerUser\" />
+      <None Remove="Business\CustomerUsers\Commands\DeleteCustomerUser\" />
+      <None Remove="Business\CustomerUsers\Requests\GetCustomerUsers\" />
     </ItemGroup>
 
     <ItemGroup>
@@ -112,5 +115,8 @@
       <Folder Include="Business\CustomerUsers\Commands\" />
       <Folder Include="Business\CustomerUsers\Requests\" />
       <Folder Include="Business\CustomerUsers\Commands\AddCustomerUser\" />
+      <Folder Include="Business\CustomerUsers\Commands\UpdateCustomerUser\" />
+      <Folder Include="Business\CustomerUsers\Commands\DeleteCustomerUser\" />
+      <Folder Include="Business\CustomerUsers\Requests\GetCustomerUsers\" />
     </ItemGroup>
 </Project>
