@@ -6,22 +6,22 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Clobo.Application.Business.ProductLines.Commands.RemoveProductsFromProductLine
 {
-    public record RemoveProductFromProductLineCommand : IRequest<ProductLine>
+    public record RemoveProductsFromProductLineCommand : IRequest<ProductLine>
     {
         public int ProductLineId { get; init; }
         public IList<Product> Products { get; init; }
     }
 
-    public class RemoveProductFromProductLineCommandHandler : IRequestHandler<RemoveProductFromProductLineCommand, ProductLine>
+    public class RemoveProductsFromProductLineCommandHandler : IRequestHandler<RemoveProductsFromProductLineCommand, ProductLine>
     {
         private readonly IApplicationDbContext _context;
 
-        public RemoveProductFromProductLineCommandHandler(IApplicationDbContext context)
+        public RemoveProductsFromProductLineCommandHandler(IApplicationDbContext context)
         {
             _context = context;
         }
 
-        public async Task<ProductLine> Handle(RemoveProductFromProductLineCommand request, CancellationToken cancellationToken)
+        public async Task<ProductLine> Handle(RemoveProductsFromProductLineCommand request, CancellationToken cancellationToken)
         {
             var productLine = await _context.ProductLines.Include(x => x.Products).FirstOrDefaultAsync(x => x.Id == request.ProductLineId);
 

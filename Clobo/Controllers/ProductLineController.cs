@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Clobo.Application.Business.ProductLines.Commands.AddProductLine;
+﻿using Clobo.Application.Business.ProductLines.Commands.AddProductLine;
 using Clobo.Application.Business.ProductLines.Commands.AddProuctsToProductLine;
 using Clobo.Application.Business.ProductLines.Commands.DeleteProductLine;
 using Clobo.Application.Business.ProductLines.Commands.RemoveProductsFromProductLine;
 using Clobo.Application.Business.ProductLines.Requests.GetAllProductLines;
 using Clobo.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
-
-// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace Clobo.Controllers
 {
@@ -57,4 +51,3 @@ namespace Clobo.Controllers
         }
     }
 }
-
