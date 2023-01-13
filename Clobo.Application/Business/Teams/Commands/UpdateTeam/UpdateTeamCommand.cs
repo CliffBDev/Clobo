@@ -24,7 +24,7 @@ namespace Clobo.Application.Business.Teams.Commands.UpdateTeam
         {
             var dbTeam = await _context.Teams.FirstOrDefaultAsync(x => x.Id == request.Id);
 
-            if (dbTeam == null)
+            if (dbTeam is null)
                 throw new ArgumentException("Team does not exist");
 
             dbTeam.Name = request.Name;

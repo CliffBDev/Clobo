@@ -23,7 +23,7 @@ namespace Clobo.Application.Business.Agents.Commands.DeleteAgent
         {
             var agent = await _context.Agents.FirstOrDefaultAsync(x => x.Id == request.Id);
 
-            if (agent == null)
+            if (agent is null)
                 throw new Exception("Agent does not exist");
 
             _context.Agents.Remove(agent);

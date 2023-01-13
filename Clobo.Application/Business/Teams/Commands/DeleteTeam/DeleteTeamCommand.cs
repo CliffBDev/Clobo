@@ -25,7 +25,7 @@ namespace Clobo.Application.Business.Teams.Commands.DeleteTeam
         {
             var team = await _context.Teams.FirstOrDefaultAsync(x => x.Id == request.Id);
 
-            if (team == null)
+            if (team is null)
                 throw new ArgumentException("Team does not exist");
 
             _context.Teams.Remove(team);

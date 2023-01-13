@@ -12,8 +12,8 @@
       <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.4.0" />
       <PackageReference Include="MediatR" Version="11.1.0" />
       <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
-      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.0" />
-      <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.0">
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.2" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.2">
         <PrivateAssets>all</PrivateAssets>
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       </PackageReference>
@@ -53,6 +53,14 @@
       <None Remove="Business\Products\Requests\GetAllProducts\" />
       <None Remove="Business\Products\Commands\UpdateProduct\UpdateSingleProduct\" />
       <None Remove="Business\Products\Commands\UpdateProduct\UpdateMultipleProducts\" />
+      <None Remove="Business\ProductLines\" />
+      <None Remove="Business\ProductLines\Commands\" />
+      <None Remove="Business\ProductLines\Requests\" />
+      <None Remove="Business\ProductLines\Commands\AddProductLine\" />
+      <None Remove="Business\ProductLines\Commands\AddProuctsToProductLine\" />
+      <None Remove="Business\ProductLines\Commands\DeleteProductLine\" />
+      <None Remove="Business\ProductLines\Commands\RemoveProductsFromProductLine\" />
+      <None Remove="Business\ProductLines\Requests\GetAllProductLines\" />
     </ItemGroup>
 
     <ItemGroup>
@@ -74,5 +82,13 @@
       <Folder Include="Business\Products\Requests\GetAllProducts\" />
       <Folder Include="Business\Products\Commands\UpdateProduct\UpdateSingleProduct\" />
       <Folder Include="Business\Products\Commands\UpdateProduct\UpdateMultipleProducts\" />
+      <Folder Include="Business\ProductLines\" />
+      <Folder Include="Business\ProductLines\Commands\" />
+      <Folder Include="Business\ProductLines\Requests\" />
+      <Folder Include="Business\ProductLines\Commands\AddProductLine\" />
+      <Folder Include="Business\ProductLines\Commands\AddProuctsToProductLine\" />
+      <Folder Include="Business\ProductLines\Commands\DeleteProductLine\" />
+      <Folder Include="Business\ProductLines\Commands\RemoveProductsFromProductLine\" />
+      <Folder Include="Business\ProductLines\Requests\GetAllProductLines\" />
     </ItemGroup>
 </Project>

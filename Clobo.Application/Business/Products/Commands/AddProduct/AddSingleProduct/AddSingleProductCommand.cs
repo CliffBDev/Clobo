@@ -22,9 +22,21 @@ namespace Clobo.Application.Business.Products.Commands.AddProduct.AddSingleProdu
             _context = context;
         }
 
-        public Task<Product> Handle(AddSingleProductCommand request, CancellationToken cancellationToken)
+        public async Task<Product> Handle(AddSingleProductCommand request, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            var product = new Product()
+            {
+                Name = request.Name,
+                SerialNumber = request.SerialNumber,
+                Description = request.Description,
+                Price = request.Price
+            };
+
+            _context.Products.Add(product);
+
+            await _context.SaveChangesAsync(cancellationToken);
+
+            return product;
         }
     }
 }
