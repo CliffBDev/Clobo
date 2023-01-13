@@ -28,6 +28,7 @@ namespace Clobo.Controllers
             var res = await Mediator.Send(command);
             return Ok(res);
         }
+
     }
 }
 

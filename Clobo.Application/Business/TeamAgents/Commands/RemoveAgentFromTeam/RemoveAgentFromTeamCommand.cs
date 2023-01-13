@@ -29,17 +29,17 @@ namespace Clobo.Application.Business.TeamAgents.Commands.RemoveAgentFromTeam
                 .FirstOrDefaultAsync(x => x.Agent.Id == request.AgentId && x.Team.Id == request.TeamId);
 
             if (teamAgent is null)
-                throw new ArgumentException("Team agent does not exist");
+                throw new ArgumentNullException("Team agent does not exist");
 
             var team = await _context.Teams.FirstOrDefaultAsync(x => x.Id == request.TeamId);
 
             if (team is null)
-                throw new ArgumentException("Team does not exist");
+                throw new ArgumentNullException("Team does not exist");
 
             var agent = await _context.Agents.FirstOrDefaultAsync(x => x.Id == request.AgentId);
 
             if (agent is null)
-                throw new ArgumentException("Agent does not exist");
+                throw new ArgumentNullException("Agent does not exist");
 
             _context.TeamAgents.Remove(teamAgent);
 
