@@ -3,9 +3,9 @@ using FluentValidation;
 
 namespace Clobo.Application.Business.ProductLines.Commands.RemoveProductsFromProductLine
 {
-    public class RemoveProductFromProductLineCommandValidator : AbstractValidator<RemoveProductFromProductLineCommand>
+    public class RemoveProductsFromProductLineCommandValidator : AbstractValidator<RemoveProductsFromProductLineCommand>
     {
-        public RemoveProductFromProductLineCommandValidator()
+        public RemoveProductsFromProductLineCommandValidator()
         {
             RuleFor(x => x.ProductLineId)
                 .GreaterThan(0).WithMessage("Product Line Id must be greater than 0");
