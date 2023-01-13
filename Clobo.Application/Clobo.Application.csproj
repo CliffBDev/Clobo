@@ -61,6 +61,13 @@
       <None Remove="Business\ProductLines\Commands\DeleteProductLine\" />
       <None Remove="Business\ProductLines\Commands\RemoveProductsFromProductLine\" />
       <None Remove="Business\ProductLines\Requests\GetAllProductLines\" />
+      <None Remove="Business\Customers\" />
+      <None Remove="Business\Customers\Commands\" />
+      <None Remove="Business\Customers\Requests\" />
+      <None Remove="Business\Customers\Commands\AddCustomer\" />
+      <None Remove="Business\Customers\Commands\UpdateCustomer\" />
+      <None Remove="Business\Customers\Commands\DeleteCustomer\" />
+      <None Remove="Business\Customers\Requests\GetAllCustomers\" />
     </ItemGroup>
 
     <ItemGroup>
@@ -90,5 +97,12 @@
       <Folder Include="Business\ProductLines\Commands\DeleteProductLine\" />
       <Folder Include="Business\ProductLines\Commands\RemoveProductsFromProductLine\" />
       <Folder Include="Business\ProductLines\Requests\GetAllProductLines\" />
+      <Folder Include="Business\Customers\" />
+      <Folder Include="Business\Customers\Commands\" />
+      <Folder Include="Business\Customers\Requests\" />
+      <Folder Include="Business\Customers\Commands\AddCustomer\" />
+      <Folder Include="Business\Customers\Commands\UpdateCustomer\" />
+      <Folder Include="Business\Customers\Commands\DeleteCustomer\" />
+      <Folder Include="Business\Customers\Requests\GetAllCustomers\" />
     </ItemGroup>
 </Project>
