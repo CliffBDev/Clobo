@@ -17,6 +17,7 @@ namespace Clobo.Domain.Entities
         public TicketStatus TicketStatus { get; set; }
         public Customer Customer { get; set; }
         public Product Product { get; set; }
+        public IList<TicketNote> TicketNotes { get; set; }
     }
 }
 

@@ -8,7 +8,7 @@ public class CloboContext : DbContext, IApplicationDbContext
 {
     public CloboContext(DbContextOptions<CloboContext> options) : base(options)
     {
-           
+
     }
     public DbSet<Agent> Agents { get; set; }
     public DbSet<Customer> Customers { get; set; }
@@ -19,6 +19,7 @@ public class CloboContext : DbContext, IApplicationDbContext
     public DbSet<TeamAgent> TeamAgents { get; set; }
     public DbSet<TeamProductLines> TeamProductLines { get; set; }
     public DbSet<Ticket> Tickets { get; set; }
+    public DbSet<TicketNote> TicketNotes { get; set; }
 
     public async Task<int> SaveChangesAsync(CancellationToken cancellationToken)
     {

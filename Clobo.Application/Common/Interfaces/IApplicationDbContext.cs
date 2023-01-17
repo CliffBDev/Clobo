@@ -14,5 +14,6 @@ public interface IApplicationDbContext
     public DbSet<TeamAgent> TeamAgents { get; set; }
     public DbSet<TeamProductLines> TeamProductLines { get; set; }
     public DbSet<Ticket> Tickets { get; set; }
+    public DbSet<TicketNote> TicketNotes { get; set; }
     public Task<int> SaveChangesAsync(CancellationToken cancellationToken);
 }
