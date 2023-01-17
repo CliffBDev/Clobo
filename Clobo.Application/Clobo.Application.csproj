@@ -75,6 +75,13 @@
       <None Remove="Business\CustomerUsers\Commands\UpdateCustomerUser\" />
       <None Remove="Business\CustomerUsers\Commands\DeleteCustomerUser\" />
       <None Remove="Business\CustomerUsers\Requests\GetCustomerUsers\" />
+      <None Remove="Business\Tickets\" />
+      <None Remove="Business\Tickets\Commands\" />
+      <None Remove="Business\Tickets\Requests\" />
+      <None Remove="Business\Tickets\Commands\AddTicket\" />
+      <None Remove="Business\Tickets\Commands\UpdateTicket\" />
+      <None Remove="Business\Tickets\Commands\DeleteTicket\" />
+      <None Remove="Business\Tickets\Requests\GetAllTickets\" />
     </ItemGroup>
 
     <ItemGroup>
@@ -118,5 +125,12 @@
       <Folder Include="Business\CustomerUsers\Commands\UpdateCustomerUser\" />
       <Folder Include="Business\CustomerUsers\Commands\DeleteCustomerUser\" />
       <Folder Include="Business\CustomerUsers\Requests\GetCustomerUsers\" />
+      <Folder Include="Business\Tickets\" />
+      <Folder Include="Business\Tickets\Commands\" />
+      <Folder Include="Business\Tickets\Requests\" />
+      <Folder Include="Business\Tickets\Commands\AddTicket\" />
+      <Folder Include="Business\Tickets\Commands\UpdateTicket\" />
+      <Folder Include="Business\Tickets\Commands\DeleteTicket\" />
+      <Folder Include="Business\Tickets\Requests\GetAllTickets\" />
     </ItemGroup>
 </Project>
