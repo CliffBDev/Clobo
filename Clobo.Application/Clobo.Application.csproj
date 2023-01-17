@@ -61,6 +61,32 @@
       <None Remove="Business\ProductLines\Commands\DeleteProductLine\" />
       <None Remove="Business\ProductLines\Commands\RemoveProductsFromProductLine\" />
       <None Remove="Business\ProductLines\Requests\GetAllProductLines\" />
+      <None Remove="Business\Customers\" />
+      <None Remove="Business\Customers\Commands\" />
+      <None Remove="Business\Customers\Requests\" />
+      <None Remove="Business\Customers\Commands\AddCustomer\" />
+      <None Remove="Business\Customers\Commands\UpdateCustomer\" />
+      <None Remove="Business\Customers\Commands\DeleteCustomer\" />
+      <None Remove="Business\Customers\Requests\GetAllCustomers\" />
+      <None Remove="Business\CustomerUsers\" />
+      <None Remove="Business\CustomerUsers\Commands\" />
+      <None Remove="Business\CustomerUsers\Requests\" />
+      <None Remove="Business\CustomerUsers\Commands\AddCustomerUser\" />
+      <None Remove="Business\CustomerUsers\Commands\UpdateCustomerUser\" />
+      <None Remove="Business\CustomerUsers\Commands\DeleteCustomerUser\" />
+      <None Remove="Business\CustomerUsers\Requests\GetCustomerUsers\" />
+      <None Remove="Business\Tickets\" />
+      <None Remove="Business\Tickets\Commands\" />
+      <None Remove="Business\Tickets\Requests\" />
+      <None Remove="Business\Tickets\Commands\AddTicket\" />
+      <None Remove="Business\Tickets\Commands\UpdateTicket\" />
+      <None Remove="Business\Tickets\Commands\DeleteTicket\" />
+      <None Remove="Business\Tickets\Requests\GetAllTickets\" />
+      <None Remove="Business\TicketNotes\" />
+      <None Remove="Business\TicketNotes\Commands\" />
+      <None Remove="Business\TicketNotes\Requests\" />
+      <None Remove="Business\TicketNotes\Commands\AddTicketNote\" />
+      <None Remove="Business\TicketNotes\Requests\GetTicketNotes\" />
     </ItemGroup>
 
     <ItemGroup>
@@ -90,5 +116,31 @@
       <Folder Include="Business\ProductLines\Commands\DeleteProductLine\" />
       <Folder Include="Business\ProductLines\Commands\RemoveProductsFromProductLine\" />
       <Folder Include="Business\ProductLines\Requests\GetAllProductLines\" />
+      <Folder Include="Business\Customers\" />
+      <Folder Include="Business\Customers\Commands\" />
+      <Folder Include="Business\Customers\Requests\" />
+      <Folder Include="Business\Customers\Commands\AddCustomer\" />
+      <Folder Include="Business\Customers\Commands\UpdateCustomer\" />
+      <Folder Include="Business\Customers\Commands\DeleteCustomer\" />
+      <Folder Include="Business\Customers\Requests\GetAllCustomers\" />
+      <Folder Include="Business\CustomerUsers\" />
+      <Folder Include="Business\CustomerUsers\Commands\" />
+      <Folder Include="Business\CustomerUsers\Requests\" />
+      <Folder Include="Business\CustomerUsers\Commands\AddCustomerUser\" />
+      <Folder Include="Business\CustomerUsers\Commands\UpdateCustomerUser\" />
+      <Folder Include="Business\CustomerUsers\Commands\DeleteCustomerUser\" />
+      <Folder Include="Business\CustomerUsers\Requests\GetCustomerUsers\" />
+      <Folder Include="Business\Tickets\" />
+      <Folder Include="Business\Tickets\Commands\" />
+      <Folder Include="Business\Tickets\Requests\" />
+      <Folder Include="Business\Tickets\Commands\AddTicket\" />
+      <Folder Include="Business\Tickets\Commands\UpdateTicket\" />
+      <Folder Include="Business\Tickets\Commands\DeleteTicket\" />
+      <Folder Include="Business\Tickets\Requests\GetAllTickets\" />
+      <Folder Include="Business\TicketNotes\" />
+      <Folder Include="Business\TicketNotes\Commands\" />
+      <Folder Include="Business\TicketNotes\Requests\" />
+      <Folder Include="Business\TicketNotes\Commands\AddTicketNote\" />
+      <Folder Include="Business\TicketNotes\Requests\GetTicketNotes\" />
     </ItemGroup>
 </Project>

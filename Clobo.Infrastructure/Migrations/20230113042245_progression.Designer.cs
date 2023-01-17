@@ -3,6 +3,7 @@ using System;
 using Clobo.Infrastructure.Persistance;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Clobo.Infrastructure.Migrations
 {
     [DbContext(typeof(CloboContext))]
-    partial class CloboContextModelSnapshot : ModelSnapshot
+    [Migration("20230113042245_progression")]
+    partial class progression
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.2");
@@ -348,43 +351,6 @@ namespace Clobo.Infrastructure.Migrations
                     b.ToTable("Tickets");
                 });
 
-            modelBuilder.Entity("Clobo.Domain.Entities.TicketNote", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("AgentId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<DateTime>("Created")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("CreatedBy")
-                        .HasColumnType("TEXT");
-
-                    b.Property<DateTime>("LastModified")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("LastModifiedBy")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Note")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<int?>("TicketId")
-                        .HasColumnType("INTEGER");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("AgentId");
-
-                    b.HasIndex("TicketId");
-
-                    b.ToTable("TicketNotes");
-                });
-
             modelBuilder.Entity("TeamTeamProductLines", b =>
                 {
                     b.Property<int>("TeamProductLinesId")
@@ -468,21 +434,6 @@ namespace Clobo.Infrastructure.Migrations
                     b.Navigation("Team");
                 });
 
-            modelBuilder.Entity("Clobo.Domain.Entities.TicketNote", b =>
-                {
-                    b.HasOne("Clobo.Domain.Entities.Agent", "Agent")
-                        .WithMany()
-                        .HasForeignKey("AgentId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Clobo.Domain.Entities.Ticket", null)
-                        .WithMany("TicketNotes")
-                        .HasForeignKey("TicketId");
-
-                    b.Navigation("Agent");
-                });
-
             modelBuilder.Entity("TeamTeamProductLines", b =>
                 {
                     b.HasOne("Clobo.Domain.Entities.TeamProductLines", null)
@@ -516,11 +467,6 @@ namespace Clobo.Infrastructure.Migrations
             modelBuilder.Entity("Clobo.Domain.Entities.TeamProductLines", b =>
                 {
                     b.Navigation("Products");
-                });
-
-            modelBuilder.Entity("Clobo.Domain.Entities.Ticket", b =>
-                {
-                    b.Navigation("TicketNotes");
                 });
 #pragma warning restore 612, 618
         }
