@@ -82,6 +82,11 @@
       <None Remove="Business\Tickets\Commands\UpdateTicket\" />
       <None Remove="Business\Tickets\Commands\DeleteTicket\" />
       <None Remove="Business\Tickets\Requests\GetAllTickets\" />
+      <None Remove="Business\TicketNotes\" />
+      <None Remove="Business\TicketNotes\Commands\" />
+      <None Remove="Business\TicketNotes\Requests\" />
+      <None Remove="Business\TicketNotes\Commands\AddTicketNote\" />
+      <None Remove="Business\TicketNotes\Requests\GetTicketNotes\" />
     </ItemGroup>
 
     <ItemGroup>
@@ -132,5 +137,10 @@
       <Folder Include="Business\Tickets\Commands\UpdateTicket\" />
       <Folder Include="Business\Tickets\Commands\DeleteTicket\" />
       <Folder Include="Business\Tickets\Requests\GetAllTickets\" />
+      <Folder Include="Business\TicketNotes\" />
+      <Folder Include="Business\TicketNotes\Commands\" />
+      <Folder Include="Business\TicketNotes\Requests\" />
+      <Folder Include="Business\TicketNotes\Commands\AddTicketNote\" />
+      <Folder Include="Business\TicketNotes\Requests\GetTicketNotes\" />
     </ItemGroup>
 </Project>
