@@ -28,6 +28,17 @@ public class CloboContext : DbContext, IApplicationDbContext
     public DbSet<Ticket> Tickets { get; set; }
     public DbSet<TicketNote> TicketNotes { get; set; }
 
+    protected override void OnModelCreating(ModelBuilder builder)
+    {
+        builder.Entity<Ticket>().HasMany(x => x.TicketNotes).WithOne().OnDelete(DeleteBehavior.Cascade);
+
+        builder.Entity<Customer>().HasMany(x => x.CustomerUsers).WithOne().OnDelete(DeleteBehavior.Cascade);
+
+        builder.Entity<ProductLine>().HasMany(x => x.Products).WithOne().OnDelete(DeleteBehavior.NoAction);
+
+
+    }
+
     public async Task<int> SaveChangesAsync(CancellationToken cancellationToken)
     {
         return await base.SaveChangesAsync(cancellationToken);

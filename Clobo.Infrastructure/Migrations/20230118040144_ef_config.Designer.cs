@@ -3,6 +3,7 @@ using System;
 using Clobo.Infrastructure.Persistance;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Clobo.Infrastructure.Migrations
 {
     [DbContext(typeof(CloboContext))]
-    partial class CloboContextModelSnapshot : ModelSnapshot
+    [Migration("20230118040144_ef_config")]
+    partial class efconfig
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.2");
@@ -49,7 +52,7 @@ namespace Clobo.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Agents", (string)null);
+                    b.ToTable("Agents");
                 });
 
             modelBuilder.Entity("Clobo.Domain.Entities.Customer", b =>
@@ -96,7 +99,7 @@ namespace Clobo.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Customers", (string)null);
+                    b.ToTable("Customers");
                 });
 
             modelBuilder.Entity("Clobo.Domain.Entities.CustomerUser", b =>
@@ -143,7 +146,7 @@ namespace Clobo.Infrastructure.Migrations
 
                     b.HasIndex("CustomerId");
 
-                    b.ToTable("CustomerUsers", (string)null);
+                    b.ToTable("CustomerUsers");
                 });
 
             modelBuilder.Entity("Clobo.Domain.Entities.Product", b =>
@@ -190,7 +193,7 @@ namespace Clobo.Infrastructure.Migrations
 
                     b.HasIndex("TeamProductLinesId");
 
-                    b.ToTable("Products", (string)null);
+                    b.ToTable("Products");
                 });
 
             modelBuilder.Entity("Clobo.Domain.Entities.ProductLine", b =>
@@ -217,7 +220,7 @@ namespace Clobo.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("ProductLines", (string)null);
+                    b.ToTable("ProductLines");
                 });
 
             modelBuilder.Entity("Clobo.Domain.Entities.Team", b =>
@@ -244,7 +247,7 @@ namespace Clobo.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Teams", (string)null);
+                    b.ToTable("Teams");
                 });
 
             modelBuilder.Entity("Clobo.Domain.Entities.TeamAgent", b =>
@@ -280,7 +283,7 @@ namespace Clobo.Infrastructure.Migrations
 
                     b.HasIndex("TeamId");
 
-                    b.ToTable("TeamAgents", (string)null);
+                    b.ToTable("TeamAgents");
                 });
 
             modelBuilder.Entity("Clobo.Domain.Entities.TeamProductLines", b =>
@@ -291,7 +294,7 @@ namespace Clobo.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("TeamProductLines", (string)null);
+                    b.ToTable("TeamProductLines");
                 });
 
             modelBuilder.Entity("Clobo.Domain.Entities.Ticket", b =>
@@ -345,7 +348,7 @@ namespace Clobo.Infrastructure.Migrations
 
                     b.HasIndex("TeamId");
 
-                    b.ToTable("Tickets", (string)null);
+                    b.ToTable("Tickets");
                 });
 
             modelBuilder.Entity("Clobo.Domain.Entities.TicketNote", b =>
@@ -382,7 +385,7 @@ namespace Clobo.Infrastructure.Migrations
 
                     b.HasIndex("TicketId");
 
-                    b.ToTable("TicketNotes", (string)null);
+                    b.ToTable("TicketNotes");
                 });
 
             modelBuilder.Entity("TeamTeamProductLines", b =>
@@ -397,7 +400,7 @@ namespace Clobo.Infrastructure.Migrations
 
                     b.HasIndex("TeamsId");
 
-                    b.ToTable("TeamTeamProductLines", (string)null);
+                    b.ToTable("TeamTeamProductLines");
                 });
 
             modelBuilder.Entity("Clobo.Domain.Entities.CustomerUser", b =>
