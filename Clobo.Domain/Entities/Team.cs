@@ -10,9 +10,8 @@ namespace Clobo.Domain.Entities
         }
 
         public int Id { get; set; }
-        public string Name { get; set; } 
+        public string Name { get; set; }
         public IList<TeamAgent> TeamAgents { get; set; }
-        public IList<TeamProductLines> TeamProductLines { get; set; }
     }
 }
 
